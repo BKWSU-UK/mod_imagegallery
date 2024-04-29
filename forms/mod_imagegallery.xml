@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset>
+        <field name="gallery_date" type="calendar" default="now" label="Gallery Date" description="Select the date for the image gallery." showtime="false" />
+        <field name="gallery_title" type="text" default="Image Gallery" label="Gallery Title" description="Enter a title for the image gallery." />
+        <field name="image_folder" type="folderlist" directory="images" label="Image Folder" description="Select the folder that contains the images." hideNone="true" hideDefault="true" />
+    </fieldset>
+</form>

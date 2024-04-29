@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="4.0" client="site" method="upgrade">
+    <name>Image Gallery</name>
+    <author>Your Name</author>
+    <version>1.0.0</version>
+    <description>Display an image gallery grouped by date.</description>
+    <files>
+        <filename module="mod_imagegallery">mod_imagegallery.php</filename>
+        <filename>helper.php</filename>
+        <filename>mod_imagegallery.xml</filename>
+        <folder>tmpl</folder>
+        <folder>forms</folder>
+    </files>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="galleries" type="subform"
+                    formsource="modules/mod_imagegallery/forms/mod_imagegallery.xml"
+                    multiple="true"
+                    layout="joomla.form.field.subform.repeatable-table"
+                    min="1" max="10"
+                    label="Manage Galleries"
+                    description="Add and manage multiple galleries.">
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+</extension>
